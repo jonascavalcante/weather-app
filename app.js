@@ -32,11 +32,11 @@ window.addEventListener('load', () => {
                     setIcons(icon, document.querySelector('.icon'));        
                     //Change temperature to Celsius/Fahrenheit 
                     temperatureSection.addEventListener('click', () => {
-                        if (temperatureSpan.textContent === 'F') {
-                            temperatureSpan.textContent = 'C';
+                        if (temperatureSpan.textContent === '°F') {
+                            temperatureSpan.textContent = '°C';
                             temperatureDegree.textContent = Math.floor(celsius);
                         } else {
-                            temperatureSpan.textContent = 'F';
+                            temperatureSpan.textContent = '°F';
                             temperatureDegree.textContent = temperature;
                         }
                     });
